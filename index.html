@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="NEXA EVENTS creates premium weddings, concerts, corporate events, summits, exhibitions, festivals, product launches, and award nights with end-to-end event management."
+    />
+    <meta name="keywords" content="event organizer, wedding organizer, corporate events, concert organizer, product launch, business summit, NEXA EVENTS" />
+    <meta name="theme-color" content="#0F172A" />
+    <meta property="og:title" content="NEXA EVENTS - Turning Ideas Into Extraordinary Experiences" />
+    <meta property="og:description" content="Premium event organizer for unforgettable high-profile events." />
+    <meta property="og:type" content="website" />
+    <title>NEXA EVENTS | Premium Event Organizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0F172A",
+              secondary: "#1E293B",
+              accent: "#3B82F6",
+              luxury: "#F59E0B",
+              mist: "#F8FAFC",
+              line: "#E2E8F0",
+              ink: "#334155"
+            },
+            fontFamily: {
+              heading: ["Poppins", "sans-serif"],
+              body: ["Inter", "sans-serif"]
+            },
+            boxShadow: {
+              premium: "0 30px 90px rgba(15, 23, 42, 0.18)",
+              glow: "0 0 80px rgba(59, 130, 246, 0.35)"
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-mist font-body text-ink antialiased dark:bg-primary dark:text-slate-200">
+    <a class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-white focus:px-5 focus:py-3 focus:text-primary" href="#main">
+      Skip to content
+    </a>
+
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <div id="cursor-glow" aria-hidden="true"></div>
+
+    <header id="site-header" class="fixed inset-x-0 top-0 z-50 px-4 py-4 transition-all duration-300">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/15 bg-white/10 px-5 py-3 shadow-premium backdrop-blur-2xl dark:bg-primary/45" aria-label="Primary navigation">
+        <a href="#hero" class="group flex items-center gap-3" aria-label="NEXA EVENTS home">
+          <span class="grid h-10 w-10 place-items-center rounded-full bg-white text-primary shadow-glow">
+            <i class="fa-solid fa-gem text-luxury"></i>
+          </span>
+          <span class="font-heading brand-wordmark text-lg font-extrabold tracking-tight text-white">NEXA EVENTS</span>
+        </a>
+        <button id="mobile-menu-button" class="rounded-full border border-white/20 px-4 py-2 text-sm font-semibold text-white md:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          Menu
+        </button>
+        <div class="hidden items-center gap-7 text-sm font-semibold text-white md:flex">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hidden items-center gap-3 md:flex">
+          <button id="theme-toggle" class="glass-button" type="button" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a href="#contact" class="rounded-full bg-primary px-5 py-3 text-sm font-bold text-white shadow-lg shadow-slate-900/20 transition hover:-translate-y-0.5 hover:bg-accent dark:bg-white dark:text-primary">Book Consultation</a>
+        </div>
+      </nav>
+      <div id="mobile-menu" class="mx-auto mt-3 hidden max-w-7xl rounded-3xl border border-white/20 bg-primary/90 p-5 text-white shadow-premium backdrop-blur-2xl md:hidden">
+        <div class="grid gap-4 text-sm font-semibold">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+          <button id="mobile-theme-toggle" class="w-fit rounded-full border border-white/20 px-4 py-2" type="button">Toggle Theme</button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="hero" class="relative min-h-screen overflow-hidden bg-primary text-white">
+        <video class="absolute inset-0 h-full w-full object-cover opacity-55" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=2400&q=85">
+          <source src="https://cdn.coverr.co/videos/coverr-concert-crowd-4963/1080p.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary/70 to-primary/30"></div>
+        <div class="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-primary to-transparent"></div>
+        <div class="floating-orb left-[8%] top-[20%] bg-accent/40"></div>
+        <div class="floating-orb right-[12%] top-[28%] bg-luxury/40 animation-delay-1000"></div>
+        <div class="floating-orb bottom-[16%] left-[45%] bg-white/20 animation-delay-2000"></div>
+        <div class="hero-grid absolute inset-0 opacity-25"></div>
+
+        <div class="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 pb-24 pt-36">
+          <div class="max-w-5xl">
+            <div class="reveal inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-semibold text-white/90 backdrop-blur-xl">
+              <span class="h-2 w-2 rounded-full bg-luxury shadow-[0_0_24px_#F59E0B]"></span>
+              Turning Ideas Into Extraordinary Experiences.
+            </div>
+            <h1 class="reveal mt-8 max-w-5xl font-heading text-5xl font-black leading-[0.95] tracking-[-0.06em] md:text-7xl lg:text-8xl">
+              We Create Unforgettable Events That Inspire Millions.
+            </h1>
+            <p class="reveal mt-8 max-w-3xl text-lg leading-8 text-slate-200 md:text-xl">
+              From intimate weddings to international conferences, concerts, corporate meetings, exhibitions, product launches, and large-scale festivals, we transform every vision into an unforgettable experience.
+            </p>
+            <div class="reveal mt-10 flex flex-col gap-4 sm:flex-row">
+              <a href="#contact" class="magnetic rounded-full bg-white px-7 py-4 text-center font-bold text-primary shadow-glow transition hover:-translate-y-1 hover:bg-luxury hover:text-white">
+                Book Consultation
+              </a>
+              <a href="#portfolio" class="magnetic rounded-full border border-white/25 bg-white/10 px-7 py-4 text-center font-bold text-white backdrop-blur-xl transition hover:-translate-y-1 hover:bg-white hover:text-primary">
+                View Our Portfolio
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-center text-xs font-semibold uppercase tracking-[0.35em] text-white/70">
+          <span>Scroll</span>
+          <span class="mx-auto mt-3 block h-12 w-[2px] overflow-hidden rounded-full bg-white/20">
+            <span class="scroll-pulse block h-5 w-full rounded-full bg-white"></span>
+          </span>
+        </div>
+      </section>
+
+      <section class="section-shell -mt-14 relative z-20">
+        <div class="glass-panel reveal rounded-[2rem] p-6 md:p-8">
+          <p class="mb-6 text-center text-sm font-bold uppercase tracking-[0.25em] text-slate-500 dark:text-slate-400">Trusted by ambitious teams and institutions</p>
+          <div id="trusted-logos" class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-9"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell section-pad">
+        <div class="grid items-center gap-12 lg:grid-cols-[1fr_0.95fr]">
+          <div>
+            <span class="eyebrow reveal">About NEXA EVENTS</span>
+            <h2 class="section-title reveal">Premium event management for moments that define brands, people, and culture.</h2>
+            <p class="section-copy reveal">
+              NEXA EVENTS brings strategy, creativity, production expertise, and calm execution together for concerts, weddings, government events, business summits, product launches, award ceremonies, music festivals, conferences, exhibitions, and brand activations.
+            </p>
+            <div id="about-highlights" class="mt-8 grid gap-4 sm:grid-cols-2"></div>
+          </div>
+          <div class="reveal image-collage">
+            <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1200&q=85" alt="Elegant gala dinner setup" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=900&q=85" alt="Luxury wedding celebration" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=900&q=85" alt="Corporate conference audience" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section-shell section-pad">
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="eyebrow reveal">Our Services</span>
+          <h2 class="section-title reveal">End-to-end event solutions, crafted with precision.</h2>
+          <p class="section-copy reveal">Every concept, vendor, timeline, permit, stage, guest journey, and production detail is orchestrated by one experienced team.</p>
+        </div>
+        <div id="services-grid" class="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"></div>
+      </section>
+
+      <section id="why" class="section-shell section-pad">
+        <div class="bento-grid">
+          <article class="bento-card bento-large reveal">
+            <span class="eyebrow">Why Choose Us</span>
+            <h2 class="section-title">A production partner trusted for high-stakes events.</h2>
+            <p class="section-copy">We combine creative direction, reliable operations, risk planning, and premium hospitality so your event feels effortless from the outside and expertly controlled behind the scenes.</p>
+          </article>
+          <div id="stats-grid" class="contents"></div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section-shell section-pad">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <span class="eyebrow reveal">Featured Portfolio</span>
+            <h2 class="section-title reveal">Cinematic experiences across every event category.</h2>
+          </div>
+          <a href="#contact" class="reveal w-fit rounded-full border border-slate-200 px-6 py-3 font-bold text-primary transition hover:border-accent hover:text-accent dark:border-white/15 dark:text-white">Plan a Similar Event</a>
+        </div>
+        <div id="portfolio-grid" class="masonry-grid mt-12"></div>
+      </section>
+
+      <section id="case-studies" class="section-shell section-pad">
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="eyebrow reveal">Case Studies</span>
+          <h2 class="section-title reveal">Designed for measurable impact.</h2>
+        </div>
+        <div id="case-grid" class="mt-12 grid gap-6 lg:grid-cols-3"></div>
+      </section>
+
+      <section id="process" class="section-shell section-pad overflow-hidden">
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="eyebrow reveal">Event Timeline</span>
+          <h2 class="section-title reveal">A clear process from first conversation to final report.</h2>
+        </div>
+        <div class="timeline-wrap reveal mt-14" aria-label="Event process timeline">
+          <div id="timeline-progress"></div>
+          <div id="timeline-steps" class="timeline-steps"></div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section-shell section-pad">
+        <div class="glass-panel reveal overflow-hidden rounded-[2rem] p-5 md:p-10">
+          <div class="mb-8 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+            <div>
+              <span class="eyebrow">Testimonials</span>
+              <h2 class="section-title">Clients feel the difference in every detail.</h2>
+            </div>
+            <div class="flex gap-3">
+              <button class="testimonial-prev slider-button" type="button" aria-label="Previous testimonial"><i class="fa-solid fa-arrow-left"></i></button>
+              <button class="testimonial-next slider-button" type="button" aria-label="Next testimonial"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="swiper testimonial-swiper">
+            <div id="testimonial-wrapper" class="swiper-wrapper"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="awards" class="section-shell section-pad">
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="eyebrow reveal">Awards & Certifications</span>
+          <h2 class="section-title reveal">Recognized standards for premium execution.</h2>
+        </div>
+        <div id="awards-grid" class="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"></div>
+      </section>
+
+      <section id="team" class="section-shell section-pad">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <span class="eyebrow reveal">Leadership Team</span>
+            <h2 class="section-title reveal">Specialists who turn complexity into calm execution.</h2>
+          </div>
+        </div>
+        <div id="team-grid" class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5"></div>
+      </section>
+
+      <section id="behind-scenes" class="section-shell section-pad">
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="eyebrow reveal">Behind The Scenes</span>
+          <h2 class="section-title reveal">Where meticulous planning becomes unforgettable atmosphere.</h2>
+        </div>
+        <div class="swiper bts-swiper reveal mt-12 rounded-[2rem] shadow-premium">
+          <div id="bts-wrapper" class="swiper-wrapper"></div>
+        </div>
+      </section>
+
+      <section id="faq" class="section-shell section-pad">
+        <div class="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <span class="eyebrow reveal">FAQ</span>
+            <h2 class="section-title reveal">Answers before we begin planning.</h2>
+            <p class="section-copy reveal">Need something custom? Our team can tailor the scope, timeline, and production model to your event.</p>
+          </div>
+          <div id="faq-list" class="space-y-4"></div>
+        </div>
+      </section>
+
+      <section id="cta" class="section-shell section-pad">
+        <div class="cta-panel reveal relative overflow-hidden rounded-[2.5rem] px-6 py-16 text-center text-white md:px-16 md:py-24">
+          <div class="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,rgba(245,158,11,0.35),transparent_30%),radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.38),transparent_32%)]"></div>
+          <div class="relative z-10 mx-auto max-w-4xl">
+            <h2 class="font-heading text-4xl font-black tracking-[-0.04em] md:text-6xl">Let's Create Your Next Extraordinary Event.</h2>
+            <p class="mx-auto mt-6 max-w-2xl text-lg text-slate-200">Tell us your vision. We will shape the concept, build the plan, and deliver the experience with precision.</p>
+            <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
+              <a href="#contact" class="rounded-full bg-white px-7 py-4 font-bold text-primary transition hover:-translate-y-1 hover:bg-luxury hover:text-white">Schedule Consultation</a>
+              <a href="#contact" class="rounded-full border border-white/25 px-7 py-4 font-bold text-white transition hover:-translate-y-1 hover:bg-white hover:text-primary">Get Free Proposal</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-shell section-pad">
+        <div class="grid gap-8 lg:grid-cols-[1fr_0.9fr]">
+          <div class="reveal rounded-[2rem] bg-white p-6 shadow-premium dark:bg-secondary md:p-8">
+            <span class="eyebrow">Contact</span>
+            <h2 class="section-title">Start with a conversation.</h2>
+            <form class="mt-8 grid gap-5" aria-label="Contact form">
+              <div class="grid gap-5 md:grid-cols-2">
+                <label class="form-field">Name<input type="text" name="name" placeholder="Your name" required /></label>
+                <label class="form-field">Email<input type="email" name="email" placeholder="you@example.com" required /></label>
+              </div>
+              <div class="grid gap-5 md:grid-cols-2">
+                <label class="form-field">Phone<input type="tel" name="phone" placeholder="+62 812 0000 0000" /></label>
+                <label class="form-field">Event Type<input type="text" name="event" placeholder="Wedding, summit, concert..." /></label>
+              </div>
+              <label class="form-field">Message<textarea name="message" rows="5" placeholder="Tell us about your date, location, audience size, and goals."></textarea></label>
+              <button class="rounded-full bg-primary px-7 py-4 font-bold text-white transition hover:-translate-y-1 hover:bg-accent dark:bg-white dark:text-primary" type="submit">Send Inquiry</button>
+            </form>
+          </div>
+          <div class="grid gap-6">
+            <div class="reveal rounded-[2rem] bg-primary p-6 text-white shadow-premium md:p-8">
+              <h3 class="font-heading text-2xl font-bold">NEXA EVENTS HQ</h3>
+              <div class="mt-6 grid gap-4 text-slate-200">
+                <p><i class="fa-brands fa-whatsapp mr-3 text-luxury"></i><a href="https://wa.me/6281200000000" target="_blank" rel="noreferrer">+62 812 0000 0000</a></p>
+                <p><i class="fa-solid fa-envelope mr-3 text-luxury"></i>hello@nexaevents.com</p>
+                <p><i class="fa-solid fa-phone mr-3 text-luxury"></i>+62 21 555 0199</p>
+                <p><i class="fa-solid fa-location-dot mr-3 text-luxury"></i>Jl. Sudirman No. 88, Jakarta, Indonesia</p>
+                <p><i class="fa-solid fa-clock mr-3 text-luxury"></i>Mon - Sat, 09:00 - 18:00</p>
+              </div>
+            </div>
+            <iframe
+              class="reveal h-80 w-full rounded-[2rem] border-0 shadow-premium"
+              title="NEXA EVENTS office map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Sudirman%20Jakarta&output=embed"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-primary px-6 py-14 text-white">
+      <div class="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
+        <div>
+          <h2 class="font-heading text-2xl font-black">NEXA EVENTS</h2>
+          <p class="mt-4 max-w-sm text-slate-300">Turning Ideas Into Extraordinary Experiences.</p>
+          <div class="mt-6 flex gap-3">
+            <a class="social-link" href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-link" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="social-link" href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer-title">Navigation</h3>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h3 class="footer-title">Services</h3>
+          <a href="#services">Corporate Events</a>
+          <a href="#services">Wedding Organizer</a>
+          <a href="#services">Concerts</a>
+          <a href="#services">Product Launches</a>
+        </div>
+        <div>
+          <h3 class="footer-title">Newsletter</h3>
+          <p class="mb-4 text-sm text-slate-300">Premium event insights, trends, and planning notes.</p>
+          <form class="flex overflow-hidden rounded-full border border-white/15 bg-white/10">
+            <input class="min-w-0 flex-1 bg-transparent px-4 py-3 text-sm outline-none placeholder:text-slate-400" type="email" placeholder="Email address" aria-label="Email address" />
+            <button class="bg-white px-5 font-bold text-primary" type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="mx-auto mt-12 flex max-w-7xl flex-col justify-between gap-4 border-t border-white/10 pt-8 text-sm text-slate-400 md:flex-row">
+        <p>Copyright © 2026 NEXA EVENTS. All rights reserved.</p>
+        <p>Premium event organizer for brands, institutions, and private celebrations.</p>
+      </div>
+    </footer>
+
+    <a id="whatsapp-float" href="https://wa.me/6281200000000" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <button id="back-to-top" type="button" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <div id="lightbox" role="dialog" aria-modal="true" aria-label="Portfolio preview">
+      <button id="lightbox-close" type="button" aria-label="Close preview"><i class="fa-solid fa-xmark"></i></button>
+      <img id="lightbox-img" src="" alt="" />
+      <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      import { animate, inView, stagger } from "https://esm.sh/framer-motion@11.3.30/dom";
+      window.framerMotionDom = { animate, inView, stagger };
+    </script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
